@@ -13,11 +13,6 @@
             padding: 20px;
             background-image: url('https://www.transparenttextures.com/patterns/peacock-feather.png'); /* Peacock feather texture */
             background-size: cover;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        body.light-mode {
-            background-color: #f4f4f4;
-            color: #333;
         }
         .container {
             max-width: 600px;
@@ -26,10 +21,6 @@
             background-color: rgba(0, 0, 0, 0.7);
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
-            transition: background-color 0.3s;
-        }
-        body.light-mode .container {
-            background-color: rgba(255, 255, 255, 0.9);
         }
         h1 {
             color: #ffd700;
@@ -37,9 +28,6 @@
             font-family: 'Cinzel', serif;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             animation: glow 2s infinite alternate;
-        }
-        body.light-mode h1 {
-            color: #ff6f61;
         }
         @keyframes glow {
             from { text-shadow: 0 0 10px #ffd700; }
@@ -50,9 +38,6 @@
             color: #ffd700;
             margin: 20px 0;
             font-size: 1.2em;
-        }
-        body.light-mode .quote {
-            color: #ff6f61;
         }
         .counter {
             font-size: 4em;
@@ -79,17 +64,10 @@
             font-size: 0.9em;
             color: #aaa;
         }
-        .footer span {
-            font-size: 0.8em;
-            color: #888;
-        }
         .timer {
             font-size: 1.5em;
             color: #ffd700;
             margin: 20px 0;
-        }
-        body.light-mode .timer {
-            color: #ff6f61;
         }
         .feature-section {
             margin-top: 30px;
@@ -98,15 +76,9 @@
             background-color: rgba(255, 215, 0, 0.1);
             border-radius: 10px;
         }
-        body.light-mode .feature-section {
-            background-color: rgba(255, 111, 97, 0.1);
-        }
         .feature-section h3 {
             color: #ffd700;
             font-size: 1.5em;
-        }
-        body.light-mode .feature-section h3 {
-            color: #ff6f61;
         }
         .feature-section ul {
             list-style-type: none;
@@ -116,9 +88,6 @@
             margin: 10px 0;
             font-size: 1.1em;
             color: #fff;
-        }
-        body.light-mode .feature-section li {
-            color: #333;
         }
         .goal-section {
             margin-top: 20px;
@@ -131,19 +100,11 @@
             background-color: rgba(255, 215, 0, 0.1);
             color: #fff;
         }
-        body.light-mode .goal-section input {
-            border-color: #ff6f61;
-            background-color: rgba(255, 111, 97, 0.1);
-            color: #333;
-        }
         .progress-bar {
             width: 100%;
             background-color: rgba(255, 215, 0, 0.1);
             border-radius: 10px;
             margin: 10px 0;
-        }
-        body.light-mode .progress-bar {
-            background-color: rgba(255, 111, 97, 0.1);
         }
         .progress-bar-fill {
             height: 10px;
@@ -157,9 +118,6 @@
             font-size: 1.5em;
             color: #ffd700;
             display: none;
-        }
-        body.light-mode .reward-message {
-            color: #ff6f61;
         }
         .confetti {
             position: fixed;
@@ -181,18 +139,6 @@
             0% { transform: translateY(-10vh) rotate(0deg); }
             100% { transform: translateY(110vh) rotate(720deg); }
         }
-        .mode-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background-color: #ff6f61;
-            color: #fff;
-            border: none;
-            padding: 10px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 1.2em;
-        }
         .streak-section {
             margin-top: 20px;
         }
@@ -200,18 +146,12 @@
             color: #ffd700;
             font-size: 1.5em;
         }
-        body.light-mode .streak-section h3 {
-            color: #ff6f61;
-        }
         .history-section {
             margin-top: 20px;
         }
         .history-section h3 {
             color: #ffd700;
             font-size: 1.5em;
-        }
-        body.light-mode .history-section h3 {
-            color: #ff6f61;
         }
         .history-section ul {
             list-style-type: none;
@@ -222,18 +162,12 @@
             font-size: 1.1em;
             color: #fff;
         }
-        body.light-mode .history-section li {
-            color: #333;
-        }
         .gallery-section {
             margin-top: 20px;
         }
         .gallery-section h3 {
             color: #ffd700;
             font-size: 1.5em;
-        }
-        body.light-mode .gallery-section h3 {
-            color: #ff6f61;
         }
         .gallery {
             display: flex;
@@ -257,9 +191,6 @@
         .mala-section h3 {
             color: #ffd700;
             font-size: 1.5em;
-        }
-        body.light-mode .mala-section h3 {
-            color: #ff6f61;
         }
         .mala {
             display: flex;
@@ -285,9 +216,6 @@
             color: #ffd700;
             font-size: 1.5em;
         }
-        body.light-mode .bhajan-player h3 {
-            color: #ff6f61;
-        }
         .bhajan-player audio {
             width: 100%;
             margin-top: 10px;
@@ -296,7 +224,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button class="mode-toggle" onclick="toggleMode()">🌙</button>
     <div class="container">
         <h1>Radha Naam Jap Tool</h1>
         <div class="quote" id="quote">
@@ -324,7 +251,7 @@
         </div>
 
         <div class="history-section">
-            <h3>📜 Chanting History:</h3>
+            <h3>📜 Chanting History (Last 7 Days):</h3>
             <ul id="historyList"></ul>
         </div>
 
@@ -347,7 +274,7 @@
         <div class="bhajan-player">
             <h3>🎵 Bhajan Player</h3>
             <audio controls>
-                <source src="https://github.com/Amol-18/Radha-music11/raw/855cd834e41d01d74afade372f9480e94786c348/Hamara%20Dhan%20Radha%20Radha%20Radha%20Radha%20Radha%20Param%20Dhan%20Radha%20Shri%20Radha%20Shri%20Radha%20(1)%20(1).mp3" type="audio/mpeg">
+                <source src="https://github.com/Amol-18/Radha-music11/raw/refs/heads/main/Hamara%20Dhan%20Radha%20Radha%20Radha%20Radha%20Radha%20Param%20Dhan%20Radha%20Shri%20Radha%20Shri%20Radha%20(1)%20(1).mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
         </div>
@@ -393,14 +320,6 @@
             "Chanting Radha's name is a step towards spiritual bliss.",
             "Radha-Krishna hears every chant of your heart.",
             "Feel the divine presence with every chant of Radha."
-        ];
-
-        const gitaQuotes = [
-            "You have the right to work, but never to the fruit of work. - Bhagavad Gita 2.47",
-            "The soul is neither born, nor does it ever die. - Bhagavad Gita 2.20",
-            "Set your heart upon your work, but never on its reward. - Bhagavad Gita 2.47",
-            "The self-controlled soul, who moves amongst sense objects, free from attachment and aversion, attains peace. - Bhagavad Gita 2.64",
-            "When meditation is mastered, the mind is unwavering like the flame of a lamp in a windless place. - Bhagavad Gita 6.19"
         ];
 
         // Generate Mala Beads
@@ -476,6 +395,7 @@
                     createConfetti();
                     updateStreak();
                     addToHistory();
+                    resetProgressBar(); // Reset progress bar after goal achievement
                 }
             }
         }
@@ -489,35 +409,38 @@
                 confettiPiece.style.animationDelay = `${Math.random()}s`;
                 confettiContainer.appendChild(confettiPiece);
             }
+            // Stop confetti after 3 seconds
+            setTimeout(() => {
+                confettiContainer.innerHTML = '';
+            }, 3000);
         }
 
         function updateStreak() {
             streak++;
             document.getElementById('streak').innerText = streak;
+            // Reset streak after 7 days
+            if (streak >= 7) {
+                streak = 0;
+                history = []; // Clear history after 7 days
+                document.getElementById('streak').innerText = streak;
+                document.getElementById('historyList').innerHTML = '';
+            }
         }
 
         function addToHistory() {
             const date = new Date().toLocaleDateString();
             history.push({ date, count });
+            // Keep only the last 7 days' history
+            if (history.length > 7) {
+                history.shift();
+            }
             const historyList = document.getElementById('historyList');
             historyList.innerHTML = history.map(entry => `<li>${entry.date}: ${entry.count} chants</li>`).join('');
         }
 
-        function toggleMode() {
-            document.body.classList.toggle('light-mode');
-            const modeToggle = document.querySelector('.mode-toggle');
-            modeToggle.innerText = document.body.classList.contains('light-mode') ? '🌞' : '🌙';
-        }
-
-        function shareOnWhatsApp() {
-            const message = `I just completed ${count} chants of Radha's name! 🙏\nKeep chanting and stay blessed! 🌸`;
-            const url = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
-            window.open(url, '_blank');
-        }
-
-        function showGitaQuote() {
-            const randomGitaQuote = gitaQuotes[Math.floor(Math.random() * gitaQuotes.length)];
-            document.getElementById('quote').innerText = randomGitaQuote;
+        function resetProgressBar() {
+            count = 0;
+            document.getElementById('progressBar').style.width = '0%';
         }
 
         function updateMala() {
